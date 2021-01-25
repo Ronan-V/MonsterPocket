@@ -1,22 +1,20 @@
 #pragma once
 #include "CObject.h"
+#include "CMonster.h"
+#include "utils.h"
 class CPotion :
 	public CObject
 {
 protected:
 
-	int m_power;
+	short m_power;
 
 
 public:
 
 	CPotion();
-	CPotion(int power);
+	CPotion(std::string name, short power, std::string typeOfObject);
 	~CPotion();
-
-	void healingPot(int m_power);
-	void speedPlus(int m_power);
-	void attackPlus(int m_power);
-	void defensePlus(int m_power);
+	void useObject(CMonster* monster, std::string nameObject);
 };
 

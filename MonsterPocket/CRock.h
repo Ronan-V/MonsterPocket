@@ -1,5 +1,6 @@
 #pragma once
 #include "CMonster.h"
+
 class CRock :
 	public CMonster
 {
@@ -10,8 +11,10 @@ protected:
 public:
 
 	CRock();
-	CRock(std::string nameMonster, int hp, float speed, int attack, int defense, std::string state, std::string weakness, float hide);
 	~CRock();
+	void attackMonster(CAttack* attack, CMonster* target);
+
 	bool hide();
+	void setterHide(float hide);
 };
 

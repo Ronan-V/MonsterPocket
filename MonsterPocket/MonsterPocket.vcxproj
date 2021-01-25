@@ -127,6 +127,7 @@
     <ClCompile Include="CDrug.cpp" />
     <ClCompile Include="CElectric.cpp" />
     <ClCompile Include="CFire.cpp" />
+    <ClCompile Include="CGame.cpp" />
     <ClCompile Include="CGrass.cpp" />
     <ClCompile Include="CInsect.cpp" />
     <ClCompile Include="CMonster.cpp" />
@@ -144,6 +145,7 @@
     <ClInclude Include="CDrug.h" />
     <ClInclude Include="CElectric.h" />
     <ClInclude Include="CFire.h" />
+    <ClInclude Include="CGame.h" />
     <ClInclude Include="CGrass.h" />
     <ClInclude Include="CInsect.h" />
     <ClInclude Include="CMonster.h" />

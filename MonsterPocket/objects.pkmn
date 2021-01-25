@@ -1,0 +1,60 @@
+Object
+	Name	Potion
+	Power	25
+	Type	Potion
+EndObject
+
+Object
+	Name	Super-Potion
+	Power	50
+	Type	Potion
+EndObject
+
+Object
+	Name	Hyper-Potion
+	Power	200
+	Type	Potion
+EndObject
+
+Object
+	Name	Speed+
+	Power	20
+	Type	Potion
+EndObject
+
+Object
+	Name	Attack+
+	Power	15
+	Type	Potion
+EndObject
+
+Object
+	Name	Defense+
+	Power	20
+	Type	Potion
+EndObject
+
+Object
+	Name	Anti-Burn
+	Type	Drug
+EndObject
+
+Object
+	Name	Sponge
+	Type	Drug
+EndObject
+
+Object
+	Name	Antidote
+	Type	Drug
+EndObject
+
+Object
+	Name	Anti-Para
+	Type	Drug
+EndObject
+
+Object
+	Name	Anti-Coward
+	Type	Drug
+EndObject

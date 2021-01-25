@@ -10,9 +10,12 @@ protected:
 public:
 
 	CPlant();
-	CPlant(std::string nameMonster, int hp, float speed, int attack, int defense, std::string state, std::string weakness, float cure);
 	~CPlant();
+	void attackMonster(CAttack* attack, CMonster* target);
+
+
 	bool cure();
+	void setterCure(float cure);
 
 };
 

@@ -10,7 +10,6 @@ protected:
 public:
 
 	CGrass();
-	CGrass(std::string nameMonster, int hp, float speed, int attack, int defense, std::string state, std::string weakness);
 	~CGrass();
 };
 

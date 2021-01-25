@@ -1,5 +1,7 @@
-/*#pragma once
+#pragma once
 #include "CObject.h"
+#include "utils.h"
+#include "CMonster.h"
 class CDrug :
 	public CObject
 {
@@ -7,15 +9,11 @@ class CDrug :
 protected:
 
 
-
 public:
 
 	CDrug();
+	CDrug(std::string name, std::string typeOfObject);
 	~CDrug();
-
-	void burnHeal();
-	void paraHeal();
-	void floodHeal();
+	void useObject(CMonster* monster, std::string nameObject);
 	
 };
-*/

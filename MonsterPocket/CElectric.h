@@ -1,5 +1,7 @@
 #pragma once
 #include "CMonster.h"
+#include "CWater.h"
+
 class CElectric :
 	public CMonster
 {
@@ -11,10 +13,11 @@ protected:
 public:
 
 	CElectric();
-	CElectric(std::string nameMonster, int hp, float speed, int attack, int defense, std::string state, std::string weakness, float paralysis);
-
 	~CElectric();
+	void attackMonster(CAttack* attack, CMonster* target);
+
 	bool paralyse();
+	void setterParalyse(float paralyse);
 
 };
 

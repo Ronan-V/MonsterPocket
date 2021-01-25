@@ -1,18 +1,16 @@
-#include "CAttack.h"
-#include "CWater.h"
-#include "CFire.h"
-#include <iostream>
+#pragma once
+#include "CGame.h"
+
+#include <windows.h>
 
 
-int main(int argc, char** argv)
+
+
+short main(short argc, char** argv)
 {
-	CWater *carapuce = new CWater("Carapuce", 45000, 1.5, 80, 80, "normal", "Grass",0.20,0.33);
-	CFire *salameche = new CFire("Salameche", 50000, 1.5, 80, 80, "normal", "Water", 0.25);
-	CAttack bulleDeau("Bulle d'eau", "Water", 10, 50, 0.15);
-	std::cout << "Avant attaque: " << salameche->getterHP();
+	mciSendString("open music.mp3 type mpegvideo alias song1", NULL, 0, 0);
+	mciSendString("play song1 repeat", NULL, 0, 0);
 
-	carapuce->attackMonster(bulleDeau, carapuce, salameche);
-
-	std::cout << "Après attaque: " << salameche->getterHP();
-
+	CGame *game = new CGame();
+	game->gameProgress(game->getterPlayersArray());
 }
